@@ -3,6 +3,13 @@
 // var age = '13'
 
 
+// let name = 'Liubomyr';
+// let age = 13;
+
+// console.log(`My name is ${name} and I am ${age} years old.`);
+
+
+
 // let name = 'Liubomyr'
 // console.log('name1',  name)
 // name = 'Dima'
