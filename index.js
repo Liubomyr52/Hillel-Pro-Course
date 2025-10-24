@@ -1,7 +1,5 @@
-let user1 = prompt('what is your name?')
-let user2 = prompt('How old are you?')
-let user3 = prompt('What is your gender?')
+let num = 1306
 
-console.log(`${user1}, ${user2}, ${user3}`)
+let str = String(num)
 
- 
+console.log(`${str[0]} ${str[1]} ${str[2]} ${str[3]}`)
