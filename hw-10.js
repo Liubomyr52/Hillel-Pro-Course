@@ -1,24 +1,71 @@
-let company = {
-  sales: [{name: 'John', salary: 1000}, {name: 'Alice', salary: 600}],
-  development: {
-    web: [{name: 'Peter', salary: 2000}, {name: 'Alex', salary: 1800}],
-    internals: [{name: 'Jack', salary: 1300}]
-  },
-  marketing: [{name: 'John1', salary: 1}, {name: 'Alice1', salary: 0}]
-}
-function getTotalScore(company) {
-  let total = 0
 
-  for(let i in company) {
-    if(Array.isArray(company[i])) {
-      total += company[i].reduce((summ, employee) => summ += employee.salary, 0)
-    }
+// HOMEWORK: 1
 
-    else if (typeof company[i] == 'object') {
-      total += getTotalScore(company[i])
-    }
+  let result = ''
+
+
+  for(let i = 1; i <= 10; i++) {
+
+  for(let j = 1; j <= 10; j++) {
+    result += (i * j) + ' '
   }
-  return total
+  result += '\n'
 }
 
-console.log(getTotalScore(company))
+document.querySelector('.pre').textContent = result
+
+
+
+
+// HOMEWORK: 2
+
+const text = document.querySelector('.li')
+const btn1 = document.querySelector('.btn')
+
+let counter = -1
+
+btn1.addEventListener(('click'), function() {
+  counter += 1
+
+  const colors = ['red', ''] 
+
+  text.style.color = colors[counter]
+})
+
+
+
+
+// HOMEWORK: 3
+
+
+const btn = document.querySelector('.btn1')
+const img = document.querySelectorAll('.img1')
+
+
+btn.addEventListener(('click'), function() {
+
+  img.forEach(i => i.style.display = 'none')
+
+  const randomValue = Math.floor(Math.random() * img.length)
+
+  img[randomValue].style.display = 'block'
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
